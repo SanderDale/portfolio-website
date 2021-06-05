@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sander W. Dale - E-Commerce Website</title>
+    <link rel="icon" href="images/sander-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/906e41480a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navigation-banner-container">
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/sander-logo.png" alt="my logo"></a>
+            </div>
+            <div class="mobile-nav">
+                <div class="burger">
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line3 line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="project-container-watches">
+        <div class="intro-container">
+            <img src="./images/watches-website-cover.jpg" alt="watches-thing">
+            <h1>E-Commerce Website</h1>
+            <div class="title-line"></div>
+            <div class="intro-paragraph-container">
+                <p>This website was our semester project at school. The goal of this project was to create an e-commerce website. I chose to create a website that sold watches. On this website I used HTML, CSS(Sass) and Javascript. We were tasked to create a local API through Strapi to fetch information to populate the website. </p>
+                <p>Below I will show some of the features of the site. If you have any questions about how I went about implementing these parts on my page, then you can check out my github.</p>
+            </div>
+            <div class="social-icons-container">
+                <a href="https://github.com/SanderDale/semester-project-2" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+            </div>
+        </div>
+        <div class="project-description-one">
+            <h5>Product Page</h5>
+            <p>On the product page I fetched the individual products from the local API and displayed them on the page. I also implemented a search feature that lets you search through the displayed products and find the one you want. The search works on words that appear in the title or description of the product.</p>
+            <img src="./images/watches-website-products-page-big-picture.jpg" alt="watches-thing">
+        </div>
+        <div class="project-description-two">
+            <h5>Detail Page</h5>
+            <p>This page displays the product that you chose from the products page. The correct product is shown by using the ID from the corresponding product on the product page. It gives the user a larger picture of the product and a short description. On this page you can also add the product to a shopping cart.</p>
+            <img src="./images/watches-website-details-page.jpg" alt="watches-thing">
+        </div>
+        <div class="project-description-one">
+            <h5>Shopping Cart</h5>
+            <p>On this page you will see all the items you have put into your cart. The total price of all the items in your cart will be displayed at the bottom. You also have the ability to go to the details page of the watch or remove it from the cart. Your cart is saved in local storage so you don't lose it if you leave the site.</p>
+            <img src="./images/watches-website-cart-page.jpg" alt="watches-thing">
+        </div>
+        <div class="project-description-two">
+            <h5>Admin Login</h5>
+            <p>The login page lets you log into the admin panel page so that you can add, edit or delete products from your page. The login sends a request to the local API and checks the login details against the registered users and if the details are correct the API sends back an authorization key that gets stored in local storage so that you stay logged in while browsing other pages.</p>
+            <img src="./images/watches-website-login-page.jpg" alt="watches-thing">
+        </div>
+        <div class="project-description-one">
+            <h5>Admin Page</h5>
+            <p>After logging in you will be sent to the admin page. Here you will see all the products currently on your page. On this page you can choose to add, edit or delete products from your page. On the edit page you can decide which products you would like to be featured products which will be displayed on the home page.</p>
+            <img src="./images/watches-website-admin-page.jpg" alt="watches-thing">
+        </div>
+    </main>
+    <footer>
+        <nav class="navigation footer-nav">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>Copyright &#169 Sander Wesenberg Dale 2021</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

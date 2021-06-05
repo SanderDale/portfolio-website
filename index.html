@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sander W. Dale - Home</title>
+    <link rel="icon" href="images/sander-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/906e41480a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hero-container">
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-nav">
+                <div class="burger">
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line3 line"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-info-grid">
+            <div class="hero-info-grid__title">
+                <h1>Hi, I'm <span class="last-word">Sander</span></h1>
+            </div>
+            <div class="hero-info-grid__paragraph">
+                <p>I am a Front-End Developer with a Bachelors in Marketing</p>
+            </div>
+            <div class="hero-info-grid__image">
+                <img src="images/sander-headshot-round.png" alt="Image of Sander" width="400px" height="400px">
+            </div>
+        </div>
+        <div class="learn-more-container">
+            <a href="#about-me">
+                <p>Learn more about me</p>
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="who-container" id="about-me">
+            <div class="who-me-container">
+                <h3>Who am I?</h3>
+                <p>I'm Sander and I have a passion for front-end development. I enjoy helping people create cool and interesting webpages that can help them to further their business. I have a bachelors degree in marketing and am currently enrolled in a front-end development program. The front-end development program has given me good insight into many aspects of front-end development.</p>
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="who-technologies-container">
+                <h3>Technologies</h3>
+                <div class="technologies-grid">
+                    <i class="fab fa-html5"></i><span>HTML</span>
+                    <i class="fab fa-css3-alt"></i><span>CSS</span>
+                    <i class="fab fa-sass"></i><span>Sass</span>
+                    <img src="images/tailwindcss.svg" alt="tailwindcss icon"><span>Tailwind</span>
+                    <i class="fab fa-js-square"></i><span>Javascript</span>
+                    <i class="fab fa-react"></i><span>React</span>
+                    <img src="images/Adobe_XD_icon.svg" alt="adobe-xd icon"><span>Adobe Xd</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-projects-container">
+            <div>
+                <h2>Projects</h2>
+                <div class="project-title-line"></div>
+            </div>
+            <div class="home-projects-grid">
+                <div>
+                    <a href="watches-project.html"  class="home-watches-container">
+                        <div class="image-with-overlay-watches">
+                            <img src="./images/watches-website-cover.jpg" alt="image of watches website" width="646px" height="345px">
+                            <div class="image-overlay-watches">
+                                <p class="image-overlay-icons-watches"><i class="fab fa-html5"></i><i class="fab fa-sass"></i><i class="fab fa-js-square"></i></p>
+                            </div>
+                        </div>
+                        <h4>E-Commerce Website</h4>
+                        <p>This E-commerce website was my semester project at school. We were tasked to make a local API and fetch information from it to populate the site. I chose to make a website that sold watches. On this project I used HTML, CSS(Sass) and Javascript. The API was created with Strapi.</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="portfolio-website.html" class="home-portfolio-container">
+                        <div class="image-with-overlay-portfolio">
+                            <img src="./images/ingunn-project-cover.jpg" alt="image of portfolio website" width="646px" height="345px">
+                            <div class="image-overlay-portfolio">
+                                <p class="image-overlay-icons-portfolio"><i class="fab fa-vuejs"></i></p>
+                            </div>
+                        </div>
+                        <h4>Portfolio Website</h4>
+                        <p>This portfolio is for an orchestra conductor. The website is created using Vue.js. The goal of this website is for the client to be able to show of some of the things they are doing and be able to be contacted for work opportunities.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="more-projects-button-container">
+                <a href="projects.html" class="more-projects-button">More projects</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="navigation footer-nav">
+            <ul class="nav-links-footer">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>Copyright &#169 Sander Wesenberg Dale 2021</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

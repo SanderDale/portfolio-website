@@ -1,0 +1,110 @@
+.projects-page-container {
+	background-color: $background-color-two;
+}
+
+.projects-title-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 90px;
+	padding-bottom: 195px;
+
+	@media screen and (max-width: $small-laptop-width) {
+		padding-bottom: 95px;
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	.project-title-line {
+		height: 10px;
+		width: 400px;
+		background-color: $primary-color;
+		margin: 0 auto;
+		margin-top: 30px;
+
+		@media screen and (max-width: $tablet-width) {
+			width: 300px;
+			margin-top: 20px;
+		}
+
+		@media screen and (max-width: $mobile-width) {
+			width: 160px;
+			margin-top: 10px;
+			height: 5px;
+		}
+	}
+}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 90%;
+
+	@media screen and (max-width: $small-laptop-width) {
+		width: 80%;
+	}
+
+	div {
+		margin-bottom: 160px;
+		height: 100%;
+	}
+
+	.project-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 80%;
+		column-gap: 60px;
+		row-gap: 20px;
+		grid-template-areas:
+			"image title"
+			"image paragraph";
+		text-decoration: none;
+
+		@media screen and (max-width: $small-laptop-width) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 15% auto;
+			justify-items: center;
+			align-items: center;
+			grid-template-areas:
+				"image"
+				"title"
+				"paragraph";
+		}
+
+		img {
+			grid-area: image;
+			width: 100%;
+			max-width: 700px;
+			justify-self: center;
+			box-shadow: 6px 6px 10px rgba($color: #000000, $alpha: 0.2);
+			transition: all 0.3s ease-in-out;
+		}
+
+		h4 {
+			align-self: start;
+			padding-bottom: 10px;
+
+			@media screen and (max-width: $small-laptop-width) {
+				align-self: center;
+			}
+
+			@media screen and (max-width: $small-mobile-width) {
+				font-size: 24px;
+			}
+		}
+
+		p {
+			max-width: 720px;
+		}
+	}
+
+	.project-grid:hover {
+		h4 {
+			color: $primary-color;
+		}
+	}
+}

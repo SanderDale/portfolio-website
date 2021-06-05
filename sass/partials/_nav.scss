@@ -1,0 +1,178 @@
+.navigation {
+	position: relative;
+	display: flex;
+	width: 80%;
+	height: 162px;
+
+	@media screen and (max-width: $tablet-width) {
+		width: 100%;
+		height: 100%;
+		min-height: 100px;
+	}
+
+	.nav-links {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		list-style: none;
+
+		@media screen and (max-width: $tablet-width) {
+			position: fixed;
+			background-color: $primary-color;
+			height: 100vh;
+			width: 100%;
+			z-index: 100;
+			right: 0;
+			flex-direction: column;
+			clip-path: circle(0 at 92% 8%);
+			-webkit-clip-path: circle(0 at 92% 8%);
+			transition: all 0.8s ease;
+			pointer-events: none;
+			align-items: flex-end;
+			justify-content: center;
+
+			li {
+				opacity: 0;
+				margin-right: 100px;
+				padding-bottom: 100px;
+			}
+
+			li:nth-child(1) {
+				transition: all 0.5s ease 0.2s;
+			}
+
+			li:nth-child(2) {
+				transition: all 0.5s ease 0.4s;
+			}
+
+			li:nth-child(3) {
+				transition: all 0.5s ease 0.6s;
+			}
+
+			li.fade {
+				opacity: 1;
+			}
+		}
+
+		@media screen and (max-width: $mobile-width) {
+			align-items: center;
+			justify-content: space-evenly;
+			height: 85vh;
+			clip-path: circle(0 at 90% 8%);
+			-webkit-clip-path: circle(0 at 90% 8%);
+
+			li {
+				opacity: 0;
+				margin-right: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		@media screen and (max-width: $mobile-width) {
+			clip-path: circle(0 at 90% 8%);
+			-webkit-clip-path: circle(0 at 90% 8%);
+		}
+
+		a {
+			font-family: $font-headings;
+			font-weight: 400;
+			font-size: 2.1875rem;
+			text-decoration: none;
+			color: white;
+			text-transform: uppercase;
+			padding-bottom: 5px;
+			transition: all 0.2s ease-in-out;
+			border-bottom: 5px solid transparent;
+		}
+
+		.active {
+			font-weight: 600;
+			color: $primary-color;
+			border-bottom: 5px solid $primary-color;
+
+			@media screen and (max-width: $tablet-width) {
+				color: white;
+				border-bottom: 5px solid white;
+			}
+		}
+
+		a:hover {
+			color: $primary-color;
+			border-bottom: 5px solid $primary-color;
+		}
+	}
+
+	.nav-links.open {
+		clip-path: circle(64% at 110% 50%);
+		-webkit-clip-path: circle(64% at 110% 50%);
+		pointer-events: all;
+
+		@media screen and (max-width: $mobile-width) {
+			clip-path: circle(200% at 110% 50%);
+			-webkit-clip-path: circle(200% at 110% 50%);
+		}
+	}
+
+	.mobile-nav {
+		display: none;
+
+		@media screen and (max-width: $tablet-width) {
+			display: block;
+
+			.burger {
+				position: absolute;
+				cursor: pointer;
+				right: 5%;
+				top: 50%;
+				transform: translate(-5%, -50%);
+				z-index: 101;
+
+				div {
+					width: 30px;
+					height: 3px;
+					background-color: $primary-color;
+					margin: 5px;
+					transition: all 0.8s ease;
+				}
+			}
+
+			.toggle {
+				position: absolute;
+				right: 5%;
+				top: 50%;
+
+				.line1 {
+					transform: rotate(-45deg) translate(-5px, 6px);
+					background-color: white;
+				}
+				.line2 {
+					opacity: 0;
+				}
+				.line3 {
+					transform: rotate(45deg) translate(-5px, -6px);
+					background-color: white;
+				}
+			}
+		}
+	}
+}
+
+.logo-container {
+	display: none;
+
+	@media screen and (max-width: $tablet-width) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 40px;
+	}
+
+	.logo {
+		width: 100px;
+
+		@media screen and (max-width: $mobile-width) {
+			width: 75px;
+		}
+	}
+}

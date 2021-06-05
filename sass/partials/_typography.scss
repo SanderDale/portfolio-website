@@ -1,0 +1,108 @@
+h1 {
+	font-family: $font-headings;
+	font-weight: 600;
+	font-size: 6.25rem;
+	color: white;
+
+	@media screen and (max-width: $tablet-width) {
+		font-size: 5rem;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		font-size: 3rem;
+	}
+}
+
+h2 {
+	font-family: $font-headings;
+	font-weight: 600;
+	font-size: 6.25rem;
+	color: white;
+
+	@media screen and (max-width: $small-laptop-width) {
+		font-size: 5.25rem;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		font-size: 4.375rem;
+	}
+
+	@media screen and (max-width: $small-mobile-width) {
+		font-size: 3.125rem;
+	}
+}
+
+h3 {
+	font-family: $font-headings;
+	font-weight: 600;
+	font-size: 5rem;
+	color: $primary-color;
+
+	@media screen and (max-width: $small-laptop-width) {
+		font-size: 4.375rem;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		font-size: 3rem;
+	}
+
+	@media screen and (max-width: $small-mobile-width) {
+		font-size: 2.75rem;
+	}
+}
+
+h4 {
+	font-family: $font-headings;
+	font-weight: 600;
+	font-size: 3.125rem;
+	color: white;
+
+	@media screen and (max-width: $tablet-width) {
+		font-size: 2.8125rem;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		font-size: 1.875rem;
+	}
+
+	@media screen and (max-width: $small-mobile-width) {
+		font-size: 1.5625rem;
+	}
+}
+
+h5 {
+	font-family: $font-headings;
+	font-weight: 600;
+	font-size: 2.8125rem;
+	color: white;
+
+	@media screen and (max-width: $mobile-width) {
+		font-size: 2.375rem;
+	}
+
+	@media screen and (max-width: $small-mobile-width) {
+		font-size: 1.5625rem;
+	}
+}
+
+p {
+	font-family: $font-paragraphs;
+	font-weight: 400;
+	font-size: 1.875rem;
+	color: white;
+	line-height: 50px;
+
+	@media screen and (max-width: $small-laptop-width) {
+		font-size: 1.5625rem;
+		line-height: 45px;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		font-size: 1rem;
+		line-height: 35px;
+	}
+}
+
+a {
+	font-family: $font-headings;
+}

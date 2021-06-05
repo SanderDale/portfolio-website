@@ -1,0 +1,236 @@
+.project-container-watches {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-color-two;
+}
+
+.intro-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding-bottom: 150px;
+
+	@media screen and (max-width: $tablet-width) {
+		padding-bottom: 100px;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		padding-bottom: 70px;
+	}
+
+	img {
+		width: 100%;
+		max-width: 800px;
+		margin-top: 60px;
+
+		@media screen and (max-width: $tablet-width) {
+			margin-top: 40px;
+		}
+	}
+
+	h1 {
+		font-size: 5.4375rem;
+		padding-top: 60px;
+		padding-bottom: 30px;
+		text-align: center;
+
+		@media screen and (max-width: $tablet-width) {
+			font-size: 4.625rem;
+			padding-top: 40px;
+		}
+
+		@media screen and (max-width: $mobile-width) {
+			font-size: 40px;
+		}
+
+		@media screen and (max-width: $small-mobile-width) {
+			font-size: 24px;
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.title-line {
+		width: 100%;
+		max-width: 600px;
+		height: 10px;
+		background-color: $primary-color;
+
+		@media screen and (max-width: $tablet-width) {
+			max-width: 400px;
+		}
+
+		@media screen and (max-width: $mobile-width) {
+			max-width: 250px;
+			height: 5px;
+		}
+
+		@media screen and (max-width: $mobile-width) {
+			max-width: 150px;
+			height: 5px;
+		}
+	}
+
+	.intro-paragraph-container {
+		padding-top: 30px;
+		padding-bottom: 50px;
+		max-width: 920px;
+
+		@media screen and (max-width: $mobile-width) {
+			padding-top: 0;
+		}
+
+		p {
+			padding-top: 40px;
+		}
+	}
+
+	.social-icons-container {
+		a {
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			transition: 0.3s ease;
+
+			i {
+				font-size: 60px;
+				padding-right: 20px;
+
+				@media screen and (max-width: $mobile-width) {
+					font-size: 40px;
+				}
+			}
+
+			span {
+				font-size: 1.875rem;
+				font-family: $font-headings;
+				font-weight: 600;
+			}
+		}
+
+		a:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.project-description-one {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 20% 80%;
+	column-gap: 60px;
+	row-gap: 40px;
+	grid-template-areas:
+		"title image"
+		"paragraph image";
+	max-width: 1390px;
+	padding-bottom: 220px;
+	margin: 0 40px;
+
+	@media screen and (max-width: $tablet-width) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		row-gap: 40px;
+		grid-template-areas:
+			"image"
+			"title"
+			"paragraph";
+		justify-items: center;
+		align-items: center;
+		padding-bottom: 100px;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		padding-bottom: 60px;
+		row-gap: 20px;
+	}
+
+	h5 {
+		grid-area: title;
+		justify-self: center;
+		align-self: center;
+	}
+
+	p {
+		grid-area: paragraph;
+		max-width: 660px;
+		justify-self: start;
+	}
+
+	img {
+		grid-area: image;
+		width: 100%;
+		max-width: 646px;
+		justify-self: center;
+		align-self: center;
+		box-shadow: 6px 6px 10px rgba($color: #000000, $alpha: 0.2);
+
+		@media screen and (max-width: $laptop-width) {
+			align-self: start;
+			padding-top: 20px;
+		}
+	}
+}
+
+.project-description-two {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 20% 80%;
+	column-gap: 60px;
+	row-gap: 40px;
+	grid-template-areas:
+		"image title"
+		"image paragraph";
+	max-width: 1390px;
+	padding-bottom: 220px;
+	margin: 0 40px;
+
+	@media screen and (max-width: $tablet-width) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"image"
+			"title"
+			"paragraph";
+		justify-items: center;
+		align-items: center;
+		padding-bottom: 100px;
+	}
+
+	@media screen and (max-width: $mobile-width) {
+		padding-bottom: 60px;
+		row-gap: 20px;
+	}
+
+	h5 {
+		grid-area: title;
+		justify-self: center;
+		align-self: center;
+	}
+
+	p {
+		grid-area: paragraph;
+		max-width: 660px;
+		justify-self: start;
+	}
+
+	img {
+		grid-area: image;
+		width: 100%;
+		max-width: 646px;
+		justify-self: center;
+		align-self: center;
+		box-shadow: 6px 6px 10px rgba($color: #000000, $alpha: 0.2);
+
+		@media screen and (max-width: $laptop-width) {
+			align-self: start;
+			padding-top: 20px;
+		}
+	}
+}

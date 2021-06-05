@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sander W. Dale - Contact</title>
+    <link rel="icon" href="images/sander-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/906e41480a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navigation-banner-container">
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/sander-logo2.png" alt="my logo"></a>
+            </div>
+            <div class="mobile-nav">
+                <div class="burger">
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line3 line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <div class="contact-title-line"></div>
+            <div class="contact-info-container">
+                <div class="get-in-touch-container">
+                    <h4>Get in touch</h4>
+                    <p>If you want to contact me just send me an email or give me a call. You can also send me a message through the contact form. I will get back to you as soon as I can.</p>
+                    <div>
+                        <i class="far fa-envelope"></i><span>post@sanderdale.no</span>
+                        <i class="fas fa-phone-square-alt"></i><span>+47 905 70 989</span>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h4>Send me a message</h4>
+                    <div class="send-title-line"></div>
+                    <form class="contact-form" method="post" action="contact-form-handler.php">
+                        <div class="contact-form-input">
+                            <label>
+                                Name
+                                <input name="name" type="text" id="name" placeholder="Name" required>
+                            </label>
+                        </div>
+                        <div class="contact-form-input">
+                            <label>
+                                Email
+                                <input name="email" type="email" id="email" placeholder="Email" required>
+                            </label>
+                        </div>
+                        <div class="contact-form-input">
+                            <label>
+                                Message
+                                <textarea name="message" id="message" placeholder="Message..." required></textarea>
+                            </label>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="social-links-container">
+            <h2>Social Links</h2>
+            <div class="social-title-line"></div>
+            <p>If you want to see some of my work or qualifications then you can also check out my Git Hub and LinkedIn accounts below.</p>
+            <div class="social-icons-container">
+                <a href="https://github.com/SanderDale/" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+                <a href="https://www.linkedin.com/in/sanderdale/" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="navigation footer-nav">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>Copyright &#169 Sander Wesenberg Dale 2021</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
