@@ -10,20 +10,20 @@ hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("toggle");
 });
 
-const watchesContainer = document.querySelector(".home-watches-container");
-const imageOverlayWatches = document.querySelector(".image-overlay-watches");
-const imageOverlayIconsWatches = document.querySelector(".image-overlay-icons-watches");
+const hotelContainer = document.querySelector(".home-hotel-container");
+const imageOverlayHotel = document.querySelector(".image-overlay-hotel");
+const imageOverlayIconsHotel = document.querySelector(".image-overlay-icons-hotel");
 
-watchesContainer.addEventListener("mouseover", () => {
-	imageOverlayWatches.style.opacity = 1;
-	imageOverlayIconsWatches.style.transform = "translateY(0)";
-	imageOverlayIconsWatches.style.transition = "transform 0.25s";
+hotelContainer.addEventListener("mouseover", () => {
+	imageOverlayHotel.style.opacity = 1;
+	imageOverlayIconsHotel.style.transform = "translateY(0)";
+	imageOverlayIconsHotel.style.transition = "transform 0.25s";
 });
 
-watchesContainer.addEventListener("mouseout", () => {
-	imageOverlayWatches.style.opacity = 0;
-	imageOverlayIconsWatches.style.transform = "translateY(20px)";
-	imageOverlayIconsWatches.style.transition = "transform 0.25s";
+hotelContainer.addEventListener("mouseout", () => {
+	imageOverlayHotel.style.opacity = 0;
+	imageOverlayIconsHotel.style.transform = "translateY(20px)";
+	imageOverlayIconsHotel.style.transition = "transform 0.25s";
 });
 
 const portfolioContainer = document.querySelector(".home-portfolio-container");

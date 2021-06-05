@@ -812,9 +812,6 @@ a {
 @media screen and (max-width: 580px) {
   .who-container {
     margin: 30px;
-    -ms-grid-rows: 1fr 400px;
-        grid-template-rows: 1fr 400px;
-    padding-bottom: 80px;
   }
 }
 
@@ -1153,7 +1150,7 @@ a {
   }
 }
 
-.home-projects-container .home-projects-grid img {
+.home-projects-container .home-projects-grid .home-projects-images {
   max-width: 100%;
   height: auto;
   -webkit-box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5);
@@ -1178,7 +1175,7 @@ a {
   }
 }
 
-.home-projects-container .home-projects-grid .home-watches-container {
+.home-projects-container .home-projects-grid .home-hotel-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,18 +1191,18 @@ a {
           align-items: center;
 }
 
-.home-projects-container .home-projects-grid .home-watches-container .image-with-overlay-watches {
+.home-projects-container .home-projects-grid .home-hotel-container .image-with-overlay-hotel {
   position: relative;
 }
 
-.home-projects-container .home-projects-grid .home-watches-container .image-with-overlay-watches .image-overlay-watches {
+.home-projects-container .home-projects-grid .home-hotel-container .image-with-overlay-hotel .image-overlay-hotel {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(1, 1, 1, 0.504639)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(1, 1, 1, 0.504639) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(1, 1, 1, 0.5)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(1, 1, 1, 0.5) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,22 +1221,21 @@ a {
   transition: opacity 0.25s;
 }
 
-.home-projects-container .home-projects-grid .home-watches-container .image-with-overlay-watches .image-overlay-watches .image-overlay-icons-watches {
+.home-projects-container .home-projects-grid .home-hotel-container .image-with-overlay-hotel .image-overlay-hotel .image-overlay-icons-hotel {
   padding: 10px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
 }
 
-.home-projects-container .home-projects-grid .home-watches-container .image-with-overlay-watches .image-overlay-watches .image-overlay-icons-watches i {
+.home-projects-container .home-projects-grid .home-hotel-container .image-with-overlay-hotel .image-overlay-hotel .image-overlay-icons-hotel .hotel-icons {
   padding-right: 20px;
-}
-
-.home-projects-container .home-projects-grid .home-watches-container .image-with-overlay-watches .image-overlay-watches .image-overlay-icons-watches .fa-html5 {
-  color: #f06529;
-}
-
-.home-projects-container .home-projects-grid .home-watches-container .image-with-overlay-watches .image-overlay-watches .image-overlay-icons-watches .fa-js-square {
-  color: #eeff00;
+  width: 100%;
+  max-width: 70px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .home-projects-container .home-projects-grid .home-portfolio-container {
@@ -1642,6 +1638,25 @@ a {
   padding-top: 40px;
 }
 
+.intro-container .social-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 580px) {
+  .intro-container .social-icons-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .intro-container .social-icons-container a {
   color: white;
   display: -webkit-box;
@@ -1677,6 +1692,12 @@ a {
 
 .intro-container .social-icons-container a:hover {
   color: #f80e56;
+}
+
+@media screen and (max-width: 580px) {
+  .intro-container .social-icons-container .github-icon {
+    margin-top: 30px;
+  }
 }
 
 .project-description-one {

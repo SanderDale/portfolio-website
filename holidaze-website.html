@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sander W. Dale - Holidaze Website</title>
+    <link rel="icon" href="images/sander-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/906e41480a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navigation-banner-container">
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/sander-logo.png" alt="my logo"></a>
+            </div>
+            <div class="mobile-nav">
+                <div class="burger">
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line3 line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="project-container-watches">
+        <div class="intro-container">
+            <img src="images/holidaze-home.jpg" alt="holidaze home screen">
+            <h1>Holidaze Website</h1>
+            <div class="title-line"></div>
+            <div class="intro-paragraph-container">
+                <p>This Hotel website was my project exam at school. This is a CRUD site that lets the user send information to an API and display it on the site. On this project I Next.js and Tailwind CSS. The API was created with Strapi.</p>
+                <p>Below you will see some information about the different pages and a link to the live website and GitHub repository.</p>
+            </div>
+            <div class="social-icons-container">
+                <a class="live-icon" href="https://holidaze-sander-dale.vercel.app/" target="_blank"><i class="fas fa-globe"></i><span>Live Site</span></a>
+                <a class="github-icon" href="https://github.com/SanderDale/project-exam-2-SanderDale-public" target="_blank"><i class="fab fa-github"></i><span>Github</span></a>
+            </div>
+        </div>
+        <div class="project-description-one">
+            <h5>Hotels List</h5>
+            <p>This page displays all the available hotels. The hotels are fetched from the API. New hotels added by admin will also be displayed here.</p>
+            <img src="images/holidaze-hotels.jpg" alt="hotels page">
+        </div>
+        <div class="project-description-two">
+            <h5>Hotel Details</h5>
+            <p>The details page for each hotel gives the user information and a picture of the hotel. This page also allows the user to book a room.</p>
+            <img src="images/holidaze-hotel-details.jpg" alt="hotel details">
+        </div>
+        <div class="project-description-one">
+            <h5>Booking</h5>
+            <p>After pressing the book now button the user is presented with a booking modal. This allows the user to fill in their name, email and duration of their stay. The information is then sent to the API and will be displayed on the admin page for the admin to see.</p>
+            <img src="images/holidaze-booking.jpg" alt="booking modal">
+        </div>
+        <div class="project-description-two">
+            <h5>Contact</h5>
+            <p>The contact page gives the user information about where they can visit the company and how to contact them. There is also a contact form that can be filled out and sent to the admin of the page. This will also be displayed on the admin page.</p>
+            <img src="images/holidaze-contact.jpg" alt="contact page">
+        </div>
+        <div class="project-description-one">
+            <h5>Login Page</h5>
+            <p>The login page lets admins log into the admin page. The login uses authentication through strapi to make sure that only authenticated user can see the admin page.</p>
+            <img src="images/holidaze-login.jpg" alt="login page">
+        </div>
+        <div class="project-description-two">
+            <h5>Admin Page</h5>
+            <p>The admin page displays all bookings of hotels and messages sent from the contact form. The admin page also allows the admin to add more hotels to the page. These will then be displayed on the hotels page.</p>
+            <img src="images/holidaze-admin.jpg" alt="admin page">
+        </div>
+    </main>
+    <footer>
+        <nav class="navigation footer-nav">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>Copyright &#169 Sander Wesenberg Dale 2021</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
